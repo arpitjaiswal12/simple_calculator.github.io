@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="outer_box">
+        <div id="timer" style="color: white;">
+            <span id="time" style="color: white; font-weight: bold; "></span>
+        </div>
+        <h1>SIMPLE CALCULATOR</h1>
+        <hr>
+        <form action="">
+            <label for="">Number : 1 <input type="number" name="" id="input-1"> </label>
+            <label for="">Number : 2 <input type="number" name="" id="input-2"> </label>
+            <label for="">Result : <p id="output"></p> </label>
+            <button type="reset" class="operator" id="clr_button" onclick="clear_button()">🆑</button>
+        </form>
+        <!-- <label for="">Result : <p id="output"></p> </label> -->
+        <div class="butts">
+            <button class="operator" onclick="cal_divide()">/</button>
+            <button class="operator" onclick="cal_multi()">×</button>
+            <button class="operator" onclick="cal_subtract()">-</button>
+            <button class="operator" onclick="cal_add()">+</button>
+            <button class="operator" onclick="cal_modulo()">%</button>
+            <button class="operator" onclick="check()">==</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+body {
+    background-color: #FFBC01;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+#timer{
+    padding: 10px;
+    text-align: center;
+}
+
+
+h1 {
+    text-align: center;
+    margin: 10px 15px;
+}
+
+.outer_box {
+    
+    border: 5px solid black;
+    width: 20vw;
+    margin: auto;
+    background-color: grey;
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px;
+    color: rgb(15, 15, 15);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.butts {
+    /* border: 2px solid red; */
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 0.5fr));
+    /* justify-content: space-around; */
+}
+.butts button{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+button {
+    border-radius: 15px;
+}
+
+#output {
+    color: white;
+    font-weight: bold;
+    display: inline;
+}
+
+.operator {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+}
+
+#input-1,
+#input-2 {
+    box-shadow: 1px 2px 2px red;
+    padding: 5px;
+
+}
+
+.operator:hover {
+    cursor: pointer;
+    background-color: #D6ED17FF;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1178px) {
+    .outer_box {
+        width: 55vw;
+    }
+
+    #input-1,
+    #input-2 {
+        width: 200px;
+        height: 20px;
+        box-shadow: 1px 2px 2px red;
+
+    }
+
+}
+@media only screen and (min-width: 290px) and (max-width: 599px){
+    .outer_box{
+        width: 80vw;
+    }
+    #input-1,
+    #input-2 {
+        width: 200px;
+        height: 20px;
+        box-shadow: 1px 2px 2px red;
+
+    }
+}
+#clr_button{
+    font-size: 25px;
+}
